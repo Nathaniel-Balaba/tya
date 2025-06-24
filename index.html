@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Tya ✨</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'rose-gold': '#E8B4B8',
+            'soft-pink': '#F8E8E9',
+            'lavender': '#E6E6FA',
+            'peach': '#FFCCCB',
+            'mint': '#F0FFF0',
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-in-out',
+            'slide-up': 'slideUp 0.8s ease-out',
+            'float': 'float 4s ease-in-out infinite',
+            'pulse-soft': 'pulseSoft 2s ease-in-out infinite',
+            'sparkle': 'sparkle 1.5s ease-in-out infinite',
+            'heart-beat': 'heartBeat 1.5s ease-in-out infinite',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(5deg); }
+    }
+    
+    @keyframes pulseSoft {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.1); opacity: 1; }
+    }
+    
+    @keyframes sparkle {
+      0%, 100% { transform: scale(0) rotate(0deg); opacity: 0; }
+      50% { transform: scale(1) rotate(180deg); opacity: 1; }
+    }
+    
+    @keyframes heartBeat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.05); }
+    }
+    
+    .font-inter { font-family: 'Inter', sans-serif; }
+    .font-playfair { font-family: 'Playfair Display', serif; }
+    .font-dancing { font-family: 'Dancing Script', cursive; }
+    .font-poppins { font-family: 'Poppins', sans-serif; }
+    
+    .glass-card {
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+    
+    .text-gradient-pink {
+      background: linear-gradient(135deg, #ff6b9d, #c44569, #f8b500);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .text-gradient-purple {
+      background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .bg-gradient-dreamy {
+      background: linear-gradient(135deg, #ffeef8 0%, #f0e6ff 25%, #e6f3ff 50%, #fff0f5 75%, #fdf2f8 100%);
+    }
+    
+    .image-frame {
+      background: linear-gradient(45deg, #ff6b9d, #c44569, #f8b500, #667eea);
+      padding: 4px;
+      border-radius: 24px;
+      animation: float 4s ease-in-out infinite;
+    }
+    
+    .love-shadow {
+      box-shadow: 0 20px 40px rgba(255, 107, 157, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.8);
+    }
+    
+    .sparkle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: linear-gradient(45deg, #ff6b9d, #ffd700);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body class="bg-gradient-dreamy min-h-screen font-inter overflow-x-hidden">
+  
+  <!-- Floating decorative elements -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+    <!-- Hearts -->
+    <div class="absolute top-20 left-10 text-pink-300 text-2xl animate-float opacity-60">💕</div>
+    <div class="absolute top-40 right-20 text-rose-300 text-xl animate-float opacity-50" style="animation-delay: 1s;">🌸</div>
+    <div class="absolute bottom-32 left-16 text-purple-300 text-lg animate-float opacity-60" style="animation-delay: 2s;">✨</div>
+    <div class="absolute bottom-20 right-32 text-pink-300 text-2xl animate-float opacity-50" style="animation-delay: 0.5s;">💖</div>
+    <div class="absolute top-60 left-1/4 text-rose-300 text-sm animate-float opacity-40" style="animation-delay: 1.5s;">🦋</div>
+    <div class="absolute top-80 right-1/3 text-purple-300 text-lg animate-float opacity-50" style="animation-delay: 3s;">🌺</div>
+    
+    <!-- Sparkles -->
+    <div class="sparkle top-32 left-1/3 animate-sparkle" style="animation-delay: 0.5s;"></div>
+    <div class="sparkle top-64 right-1/4 animate-sparkle" style="animation-delay: 1.2s;"></div>
+    <div class="sparkle bottom-40 left-1/2 animate-sparkle" style="animation-delay: 2s;"></div>
+    <div class="sparkle bottom-60 right-1/5 animate-sparkle" style="animation-delay: 0.8s;"></div>
+  </div>
+
+  <div class="min-h-screen flex items-center justify-center p-4 relative z-10">
+    <div class="glass-card rounded-3xl p-8 md:p-12 max-w-4xl w-full animate-fade-in">
+      
+      <!-- Header with modern styling -->
+      <div class="text-center mb-10 animate-slide-up">
+        <div class="inline-flex items-center gap-3 mb-4">
+          <span class="text-2xl animate-heart-beat">💕</span>
+          <h1 class="text-5xl md:text-6xl font-bold text-gradient-pink font-dancing">For Tya</h1>
+          <span class="text-2xl animate-heart-beat" style="animation-delay: 0.5s;">✨</span>
+        </div>
+        <div class="flex justify-center items-center gap-2">
+          <div class="w-8 h-0.5 bg-gradient-to-r from-transparent to-pink-400 rounded-full"></div>
+          <div class="w-2 h-2 bg-pink-400 rounded-full animate-pulse-soft"></div>
+          <div class="w-16 h-0.5 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 rounded-full"></div>
+          <div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse-soft" style="animation-delay: 0.5s;"></div>
+          <div class="w-8 h-0.5 bg-gradient-to-r from-blue-400 to-transparent rounded-full"></div>
+        </div>
+      </div>
+
+      <!-- Modern photo section -->
+      <div class="flex justify-center mb-10 animate-slide-up" style="animation-delay: 0.2s;">
+        <div class="relative">
+          <!-- Glowing background -->
+          <div class="absolute inset-0 bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 rounded-3xl blur-xl opacity-30 animate-pulse-soft"></div>
+          
+          <!-- Photo frame -->
+          <div class="image-frame relative">
+            <img 
+              src="image/tya.jpg" 
+              alt="Tya's Photo" 
+              class="rounded-2xl w-64 h-80 object-cover"
+            />
+          </div>
+          
+          <!-- Decorative elements around photo -->
+          <div class="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-pink-400 to-rose-400 rounded-full animate-pulse-soft flex items-center justify-center text-white text-sm">✨</div>
+          <div class="absolute -bottom-4 -left-4 w-10 h-10 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-pulse-soft flex items-center justify-center text-white" style="animation-delay: 1s;">💕</div>
+          <div class="absolute top-1/2 -right-6 w-6 h-6 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-soft" style="animation-delay: 0.5s;"></div>
+        </div>
+      </div>
+
+      <!-- Modern letter content -->
+      <div class="space-y-8 animate-slide-up" style="animation-delay: 0.4s;">
+        
+        <!-- Letter paragraphs with modern cards -->
+        <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/50 love-shadow">
+          <p class="text-lg leading-relaxed text-gray-700 font-poppins">
+            <span class="font-semibold text-pink-600 bg-pink-50 px-2 py-1 rounded-lg">Thank you so much</span> for your letter. Reading it felt like holding onto something sincere and rare.
+            I know you're not going anywhere — and I understand that you wrote it just in case one day we find ourselves
+            not talking as much anymore. And honestly, that kind of thoughtfulness means more than you know. <span class="text-pink-400">✨</span>
+          </p>
+        </div>
+
+        <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/50 love-shadow">
+          <p class="text-lg leading-relaxed text-gray-700 font-poppins">
+            I really appreciate you taking the time to write it. We may come from <span class="font-semibold text-purple-600 bg-purple-50 px-2 py-1 rounded-lg">different countries</span>,
+            follow different faiths, and live different lives — but that didn't stop you from reaching out
+            with something so genuine. That's something I'll always be thankful for. <span class="text-purple-400">🌸</span>
+          </p>
+        </div>
+
+        <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/50 love-shadow">
+          <p class="text-lg leading-relaxed text-gray-700 font-poppins">
+            I never expected someone like you to care the way you do. Even though we're just friends,
+            you've already shown me <span class="font-semibold text-rose-600 bg-rose-50 px-2 py-1 rounded-lg">more sincerity than most</span>. Your effort to understand, to share, to be honest —
+            it truly matters to me. <span class="text-rose-400">💕</span>
+          </p>
+        </div>
+
+        <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/50 love-shadow">
+          <p class="text-lg leading-relaxed text-gray-700 font-poppins">
+            I know that whatever happens down the road, this connection will always be a <span class="font-semibold text-pink-600 bg-pink-50 px-2 py-1 rounded-lg">special memory</span>.
+            It doesn't need to last forever to mean something. What matters is that it was real. <span class="text-pink-400">🦋</span>
+          </p>
+        </div>
+
+        <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-white/50 love-shadow">
+          <p class="text-lg leading-relaxed text-gray-700 font-poppins">
+            So <span class="font-semibold text-purple-600 bg-purple-50 px-2 py-1 rounded-lg">thank you, Tya</span>. For your words. For your heart. For simply being you. <span class="text-purple-400">💖</span>
+          </p>
+        </div>
+
+        <!-- Promise section -->
+        <div class="bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 rounded-2xl p-8 border-2 border-pink-200 text-center">
+          <p class="text-2xl font-semibold text-gradient-pink font-poppins mb-2">
+            I'll carry this with me — <span class="font-bold text-3xl">kindly, quietly, gratefully</span>. 💖
+          </p>
+          <div class="flex justify-center gap-2 mt-4">
+            <span class="text-pink-400 text-xl animate-heart-beat">💕</span>
+            <span class="text-purple-400 text-xl animate-heart-beat" style="animation-delay: 0.3s;">💜</span>
+            <span class="text-rose-400 text-xl animate-heart-beat" style="animation-delay: 0.6s;">🌸</span>
+          </div>
+        </div>
+
+        <!-- Signature -->
+        <div class="text-center">
+          <p class="text-2xl font-dancing text-gradient-purple font-semibold">
+            – With gratitude and appreciation ✨
+          </p>
+          <p class="text-lg font-poppins text-gray-600 mt-2">Nathaniel</p>
+        </div>
+
+        <!-- Beautiful quote section -->
+        <div class="relative bg-gradient-to-r from-pink-50 via-purple-50 to-blue-50 rounded-3xl p-8 border-2 border-pink-200 overflow-hidden">
+          <div class="absolute top-4 left-4 text-4xl text-pink-300 opacity-50">"</div>
+          <div class="absolute bottom-4 right-4 text-4xl text-purple-300 opacity-50">"</div>
+          
+          <p class="text-xl font-playfair text-center text-gray-700 italic leading-relaxed px-8">
+            Some friendships don't need explanation — just appreciation.
+          </p>
+          
+          <div class="flex justify-center mt-6">
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 bg-pink-400 rounded-full animate-pulse-soft"></div>
+              <div class="w-16 h-0.5 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full"></div>
+              <span class="text-purple-400 text-lg">✨</span>
+              <div class="w-16 h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 rounded-full"></div>
+              <div class="w-3 h-3 bg-blue-400 rounded-full animate-pulse-soft" style="animation-delay: 0.5s;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom decorative hearts -->
+      <div class="flex justify-center mt-10 gap-4 animate-slide-up" style="animation-delay: 0.8s;">
+        <span class="text-2xl animate-heart-beat text-pink-400">💕</span>
+        <span class="text-xl animate-heart-beat text-purple-400" style="animation-delay: 0.3s;">💜</span>
+        <span class="text-2xl animate-heart-beat text-rose-400" style="animation-delay: 0.6s;">🌸</span>
+        <span class="text-xl animate-heart-beat text-blue-400" style="animation-delay: 0.9s;">✨</span>
+        <span class="text-2xl animate-heart-beat text-pink-400" style="animation-delay: 1.2s;">🦋</span>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
